@@ -1,0 +1,61 @@
+{
+  "name": "etrv2mqtt",
+  "version": "0.01",
+  "slug": "etrv2mqtt",
+  "description": "A bridge to read values from and control danfoss eco2 thermostats",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "thermostats": [
+      {
+        "topic": "",
+        "address": "",
+        "secret_key": ""
+      }
+    ],
+    "mqtt": {
+      "server": "localhost",
+      "port": 1883,
+      "user": "",
+      "password": "",
+      "base_topic": "etrv"
+    },
+    "options": {
+      "poll_interval": 3600,
+      "retry_limit": 5,
+      "stay_connected": false,
+      "report_room_temperature": true,
+      "setpoint_debounce_time": 3
+    }
+  },
+  "schema": {
+    "thermostats": [
+      {
+        "topic": "str",
+        "address": "str",
+        "secret_key": "str"
+      }
+    ],
+    "mqtt": {
+      "server": "str?",
+      "port": "int(1,65534)?",
+      "user": "str?",
+      "password": "password?",
+      "base_topic": "str?",
+      "autodiscovery": "bool?",
+      "autodiscovery_topic": "str?",
+      "autodiscovery_retain": "bool?",
+      "hass_birth_topic": "str?",
+      "hass_birth_payload": "str?"
+    },
+    "options": {
+      "poll_interval": "int(1,)?",
+      "retry_limit": "int(0,)?",
+      "stay_connected": "bool?",
+      "report_room_temperature": "bool?",
+      "setpoint_debounce_time": "int(1,)?"
+    }
+  },
+  "host_network": true
+}

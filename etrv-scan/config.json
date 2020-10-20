@@ -1,0 +1,13 @@
+{
+  "name": "etrv-scan",
+  "version": "0.01",
+  "slug": "etrv_scan",
+  "description": "A tool to scan for eco2 thermostats and display mac-addresses",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "once",
+  "boot": "manual",
+  "options": {},
+  "schema": {},
+  "host_network": true,
+  "privileged": ["NET_ADMIN"]
+}

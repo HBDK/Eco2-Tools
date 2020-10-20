@@ -1,0 +1,17 @@
+{
+  "name": "etrv-keytool",
+  "version": "0.01",
+  "slug": "etrv_keytool",
+  "description": "A tool to retrive a key from eco2 thermostats",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "once",
+  "boot": "manual",
+  "options": {
+    "id": "00:04:2f:95:54:5a"
+  },
+  "schema": {
+    "id": "str"
+  },
+  "host_network": true,
+  "privileged": ["NET_ADMIN"]
+}
