@@ -3,6 +3,7 @@
   "version": "0.01",
   "slug": "etrv_scan",
   "description": "A tool to scan for eco2 thermostats and display mac-addresses",
+  "url": "https://github.com/HBDK/Eco2-Tools",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "once",
   "boot": "manual",
