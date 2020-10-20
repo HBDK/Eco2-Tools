@@ -3,6 +3,7 @@
   "version": "0.01",
   "slug": "etrv2mqtt",
   "description": "A bridge to read values from and control danfoss eco2 thermostats",
+  "url": "https://github.com/HBDK/Eco2-Tools",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
