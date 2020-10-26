@@ -1,9 +1,10 @@
-# eco2mqtt
+# eco2-Tools
 
 This is a collection of tools need to use Danfoss's Eco 2 thermostats with home-assistant.
 
 This project packages the work of [Keton](https://github.com/keton/etrv2mqtt) and [AdamStrojek](https://github.com/AdamStrojek/libetrv) to make it easy to use with home assistant.
 
+Read [installing third party addons](https://www.home-assistant.io/hassio/installing_third_party_addons/) for the a description of how to add this repository to Home assistant
 
 ## Use
 
