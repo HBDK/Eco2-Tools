@@ -1,6 +1,6 @@
 # eco2-Tools
 
-This is a collection of tools need to use Danfoss's Eco 2 thermostats with home-assistant.
+This is a collection of tools needed to use Danfoss's Eco 2 thermostats with home-assistant.
 
 This project packages the work of [Keton](https://github.com/keton/etrv2mqtt) and [AdamStrojek](https://github.com/AdamStrojek/libetrv) to make it easy to use with home assistant.
 
