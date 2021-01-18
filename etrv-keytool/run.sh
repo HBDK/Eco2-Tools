@@ -5,7 +5,7 @@ echo "Proceeding with '$devId' as ID"
 echo
 echo "Press the clock button on the thermostat when you get the:"
 echo "'libetrv.device:connect:54 - Trying connect to $devId'"
-echo "messeage"
+echo "message"
 
 sleep 5
 
