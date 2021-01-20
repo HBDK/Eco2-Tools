@@ -3,9 +3,8 @@ devId=$(cat /data/options.json | grep '"id":' | grep -P -o '(?<="id": ")[\s\S]*(
 
 echo "Proceeding with '$devId' as ID"
 echo
-echo "Press the clock button on the thermostat when you get the:"
+echo "Press the clock button on the thermostat when you get the following message:"
 echo "'libetrv.device:connect:54 - Trying connect to $devId'"
-echo "messeage"
 
 sleep 5
 
