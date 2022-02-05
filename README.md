@@ -17,7 +17,7 @@ etrv-keytool and etrv-scan are booth tools meant to only run when you need to ad
 1. Use the ertv-scan tool to get the mac address of the thermostat you would like to pair.
 2. paste mac adress in the setting of the etrv-keytool.
 3. start the etrv-keytool and switch to the log page
-4. on the log page pres refresh until you see somthing like this:  
+4. on the log page pres refresh until you see somthing like this:
     ```
     2020-09-26 13:46:07.193 | DEBUG    | libetrv.device:connect:54 - Trying connect to 00:04:2f:95:54:5a
     ```

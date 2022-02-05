@@ -3,7 +3,7 @@
 1. Use the ertv-scan tool to get the mac address of the thermostat you would like to pair.
 2. paste mac adress in the setting of the etrv-keytool.
 3. start the etrv-keytool and switch to the log page
-4. on the log page pres refresh until you see somthing like this:  
+4. on the log page pres refresh until you see somthing like this:
     ```
     2020-09-26 13:46:07.193 | DEBUG    | libetrv.device:connect:54 - Trying connect to 00:04:2f:95:54:5a
     ```
@@ -17,7 +17,7 @@ the default config:
 ```yaml
 thermostats:
   - topic: ''
-    address: '' 
+    address: ''
     secret_key: ''
 mqtt:
   server: localhost
@@ -37,7 +37,7 @@ options:
 
 thermostats:
   - topic: ''
-    address: '' 
+    address: ''
     secret_key: ''
 mqtt:
   server: localhost
@@ -56,74 +56,74 @@ options:
         * The desired name of the topic for this thermostat (will also be the name i home assistant)
     - address: `str`
         * Mac address of the thermostat
-        * Can be obtianed with ertv-scan 
+        * Can be obtianed with ertv-scan
     - secret_key: `str`
         * The secret key
         * Can be obtianed with ertv-keyttol
 * mqtt:
-    - server: `str`  
-        * *optional*  
+    - server: `str`
+        * *optional*
         * default: localhost
         * Hostname or Ip of the mqtt server
     - port: `int`
-        * *required*  
+        * *required*
         * default: 1883
         * Integer between 1 and 65534
     - user: `str`
-        * *optional*  
+        * *optional*
         * default: `empty`
         * Username
     - password: `str`
-        * *optional*  
+        * *optional*
         * default: `empty`
         * Password
     - base_topic: `str`
-        * *optional*  
+        * *optional*
         * default: *etrv*
         * Base topic for the add-on
     - autodiscovery: `bool?`
-        * *optional*  
+        * *optional*
         * default: `true`
         * Automatically add thermostats to Home assistant
     - autodiscovery_topic: `str`
-        * *optional*  
+        * *optional*
         * default: *homeassistant*
         * Base topic for autodiscovery, this should match the topic homeassistant is watching
     - autodiscovery_retain: `bool`
-        * *optional*  
+        * *optional*
         * default: `true`
         * Set retain bit on autodiscover messages
     - hass_birth_topic: `str`
-        * *optional*  
+        * *optional*
         * default: *hass/status*
         * Home assistant birth message (program started) topic
     - hass_birth_payload: `str`
-        * *optional*  
+        * *optional*
         * default: *online*
         * Home assistant birth message payload
 * options:
     - poll_interval: `int`
-        * *optional*  
+        * *optional*
         * default: `3600`
         * Integer 1 or larger
         * The time in seconds between fetching thermostat values
     - retry_limit: `int`
-        * *optional*  
+        * *optional*
         * default: `5`
-        * Integer 0 or larger 
+        * Integer 0 or larger
         * Limit of BLE connect attempts
     - stay_connected: `bool`
-        * *optional*  
+        * *optional*
         * default: `false`
         * Set to true in order to leave BLE connection running after polling thermostat data or setting temperature. May drain battery.
     - report_room_temperature: `bool`
-        * *optional*  
+        * *optional*
         * default: `true`
         * Set to false to disable reporting current room temperature as a separate Home Assistant sensor in MQTT auto discovery
     - setpoint_debounce_time: `int`
-        * *optional*  
+        * *optional*
         * default: `3`
-        * Integer 1 or larger 
+        * Integer 1 or larger
         * How many times to retry fetching data before skipping this thermostat until next poll
 
 
@@ -150,12 +150,6 @@ options:
   report_room_temperature: true
   setpoint_debounce_time: 3
 ```
-
-## Notes
-
-Since this add-on is build locally when installed and the dependencies are installed from the latest commit on on github, the version you are running might be different from what this documentation is written for.
-
-you can find more detailed descriptions of how etrv2mqtt and configuration on the [repo](https://github.com/keton/etrv2mqtt)
 
 ## License
 
