@@ -1,6 +1,7 @@
 {
   "name": "etrv-keytool",
-  "version": "0.01",
+  "version": "0.02",
+  "image": "hbdk/eco2-tools-keytool",
   "slug": "etrv_keytool",
   "description": "A tool to retrive a key from eco2 thermostats",
   "url": "https://github.com/HBDK/Eco2-Tools",

@@ -1,6 +1,7 @@
 {
   "name": "etrv-scan",
-  "version": "0.01",
+  "version": "0.02",
+  "image": "hbdk/eco2-tools-scan",
   "slug": "etrv_scan",
   "description": "A tool to scan for eco2 thermostats and display mac-addresses",
   "url": "https://github.com/HBDK/Eco2-Tools",
