@@ -10,3 +10,7 @@
 - switch to slim
 - use pre build image
 - use latest etrv2mqtt
+
+## 0.03
+
+- version bump

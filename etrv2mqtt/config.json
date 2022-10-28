@@ -1,6 +1,6 @@
 {
   "name": "etrv2mqtt",
-  "version": "0.02",
+  "version": "0.03",
   "image": "hbdk/eco2-tools",
   "slug": "etrv2mqtt",
   "description": "A bridge to read values from and control danfoss eco2 thermostats",
